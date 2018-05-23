@@ -1,0 +1,17 @@
+<div>
+<h3>Inputting Data</h3>
+<p>Select from the list of differential expression callers on the left panel and upload a matrix file of counts. The format of the count file is very specific. The <code>first line</code> should include the sample IDs, the <code>second line</code> should include the group designation and the <code>first column</code> should be a list of Ensembl gene identifiers.</p>
+<p>A typical input would look something like this:</p>
+<pre class="bash"><code>Symbol  Sample1 Sample2 Sample3 Sample4 Sample5 Sample6
+Group   0         0 0   1   1   1
+ENSG000000001   2   4   3   10  32  15</code></pre>
+<p>Once the file is uploaded then click on <code>Run Query</code> to run the differential expression. Once the analysis has completed you will see a tabset panel with the results.</p>
+
+
+
+<h3>Results</h3>
+<ul>
+<li>The heatmap is only generated from the list of genes that overlapped between all callers. If you only ran 1 DE caller, then it’s all the differentially expressed genes of that particular caller. If you ran 4 callers then the heatmap is the intersection of the 4 callers.</li>
+<li>Ontologies work the same way as the heatmap. Only the intersection of genes is taken. Also, note that ontology is only calculated for human, mouse, and rat genomes at this time.</li>
+</ul>
+</div>
