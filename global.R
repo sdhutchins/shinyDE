@@ -49,3 +49,6 @@ if (length(bioconductor_packages_to_install) > 0) {
   biocLite()
   biocLite(bioconductor_packages_to_install)
 }
+
+# Run the app
+shiny::runApp('app')
